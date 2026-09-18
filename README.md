@@ -1,5 +1,11 @@
 # What is it?
 
+This is a **BMS board** I designed for UNSW Bluesat's Cubesat as part of the **Australian Universities Rocket Competition (AURC)** which takes place in September 2027.
+
+The **USB-C PD charger** is implemented on a separate board due to time constraint before the competition deadline.
+
+The **BQ7791501** is a 3-5 cell stackable, ultra-low power battery pack protector with autonomous cell-balancing and hibernate mode. **Hibernate mode** is important to conserve battery life during long transit and standby time until the launch signal.
+
 <table>
   <tr>
     <td><img src="./images/Power_Board_High_Level_Schematic.jpg" width="400"></td>
@@ -14,12 +20,6 @@
     <td><img src="./images/bms_vid.mp4" width="400"></td>
   </tr>
 </table>
-
-This is a **BMS board** I designed for UNSW Bluesat's Cubesat as part of the **Australian Universities Rocket Competition (AURC)** which takes place in September 2027.
-
-The **USB-C PD charger** is implemented on a separate board due to time constraint before the competition deadline.
-
-The **BQ7791501** is a 3-5 cell stackable, ultra-low power battery pack protector with autonomous cell-balancing and hibernate mode. **Hibernate mode** is important to conserve battery life during long transit and standby time until the launch signal.
 
 ## Technical
 
