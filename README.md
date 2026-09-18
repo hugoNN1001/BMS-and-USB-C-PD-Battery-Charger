@@ -1,6 +1,19 @@
 # What is it?
 
-<img src="./images/bms_board_photo.png" alt="BMS board photo" width="500">
+<table>
+  <tr>
+    <td><img src="./images/Power_Board_High_Level_Schematic.jpg" width="400"></td>
+    <td><img src="./images/Power_Board_BMS_Schematic.jpg" width="400"></td>
+  </tr>
+  <tr>
+    <td><img src="./images/Power_Board_Fuel_Gauge_Schematic.jpg" width="400"></td>
+    <td><img src="./images/Power_Board_PCB_Layout.png" width="400"></td>
+  </tr>
+  <tr>
+    <td><img src="./images/bms1.jpg" width="400"></td>
+    <td><img src="./images/bms_vid.mp4" width="400"></td>
+  </tr>
+</table>
 
 This is a **BMS board** I designed for UNSW Bluesat's Cubesat as part of the **Australian Universities Rocket Competition (AURC)** which takes place in September 2027.
 
@@ -9,8 +22,6 @@ The **USB-C PD charger** is implemented on a separate board due to time constrai
 The **BQ7791501** is a 3-5 cell stackable, ultra-low power battery pack protector with autonomous cell-balancing and hibernate mode. **Hibernate mode** is important to conserve battery life during long transit and standby time until the launch signal.
 
 ## Technical
-
-<img src="./images/bms_schematic.png" alt="BMS schematic" width="700">
 
 The two main loads are:
 - **32 UV LEDs** to cure the resin of the Cubesat's 3D printer payload: In the worst-case, where battery pack voltage is near cut-off and LEDs are at set to output max power, they will draw around **8.5A** continuously
@@ -25,8 +36,6 @@ The two main loads are:
 The sense resistor is **2.5 mOhms with 0.5% tolerance** (instead of the regular 1%) for accurate current reading. **Kelvin connection** was used so the 2 sense traces carry minimum current. It is also rated up to **3W**, which is well above the calculated power dissipation of **1.44W** at OCD2 current of 24A.
 
 A pair of switches was added to simulate a **hot/cold condition**, which assists in verifying the proper working of the BMS.
-
-<img src="./images/bms_layout_sense_resistor.png" alt="Sense resistor Kelvin connection layout" width="500">
 
 A **filter network** was placed close to the sense pins of the protector IC helps to filter noise out of the current reading.
 
